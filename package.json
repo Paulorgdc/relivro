@@ -1,0 +1,32 @@
+{
+  "name": "relivro",
+  "version": "1.0.0",
+  "description": "Full-stack academic marketplace built for book exchange and trade.",
+  "main": "backend/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paulorgdc/relivro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Paulorgdc/relivro/issues"
+  },
+  "homepage": "https://github.com/Paulorgdc/relivro#readme",
+  "keywords": [
+    "nodejs",
+    "express",
+    "marketplace",
+    "academic-project"
+  ],
+  "author": "Paulo Roberto",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.22.1",
+    "mercadopago": "^1.5.16"
+  }
+}

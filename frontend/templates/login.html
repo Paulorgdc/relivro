@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <title>Entrar - RELIVRO</title>
+</head>
+<body>
+    <div class="container">
+      <div class="card">
+        
+        <div class="brand-header">
+            <img src="../assets/images/logo.jpeg" alt="Logo Relivro" class="logo-img">
+            <h1>RELIVRO</h1>
+        </div>
+        
+        <h2>Entrar</h2>
+
+        <div id="msg-error"></div>
+
+        <div class="label-float">
+          <input type="text" id="username" placeholder=" " required />
+          <label id="userLabel" for="username">Usuário</label>
+        </div>
+
+        <div class="label-float">
+          <input type="password" id="password" placeholder=" " required />
+          <label id="passwordLabel" for="password">Senha</label>
+          <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="justify-center">
+          <button onclick="login()">Entrar</button>
+        </div>
+
+        <p>
+          Não tem uma conta?
+          <a href="register.html">Cadastre-se</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="../assets/js/login.js"></script>
+</body>
+</html>
