@@ -1,3 +1,18 @@
 node_modules
 .DS_Store
 .env
+.env.*
+!.env.example
+
+# Segredos e caches
+.env*.local
+!**/.env.example
+**/.env
+**/.env.*
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+node_modules/
+.venv/
+venv/
