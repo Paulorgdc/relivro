@@ -32,9 +32,33 @@ The platform provides a digital solution for local communities to exchange, buy,
 
 ---
 
+## 📦 Deliverables
+
+| What | Where to see it |
+|---|---|
+| Static storefront (listings, templates, assets) | `frontend/index.html`, open directly or serve the folder |
+| API with Mercado Pago payment flow | `backend/`, `npm start` |
+
+---
+
 ## 🛠️ Installation & Setup
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/Paulorgdc/relivro.git](https://github.com/Paulorgdc/relivro.git)
+   git clone https://github.com/Paulorgdc/relivro.git
    cd relivro
+   ```
+
+2. Install backend dependencies:
+   ```powershell
+   cd backend
+   npm ci
+   Copy-Item ../.env.example .env.local
+   ```
+3. Fill `backend/.env.local` locally. `dotenv.config({ path: ".env.local" })` uses the process working
+   directory, so start the API from `backend` with `npm start`.
+4. Serve the static `frontend` directory or open its HTML entry point.
+   There is no frontend dependency installation or build step.
+
+The template lives at the repository root; the runtime file lives in `backend`.
+Never place the Mercado Pago access token in frontend files.

@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const cors = require("cors");
 const mercadopago = require("mercadopago");
-require("dotenv").config();
+require("dotenv").config({ path: ".env.local" });
 
 const app = express();
 app.disable('x-powered-by');
